@@ -1,0 +1,225 @@
+:root {
+  --primary-color: #3d2314;
+  --secondary-color: #8c5a3c;
+  --accent-color: #d4a373;
+  --bg-light: #fefae0;
+  --text-dark: #2b1e16;
+  --text-light: #f4f1de;
+  --card-bg: #ffffff;
+  --border-color: #e6ccb2;
+  --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--shadow);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+}
+
+.logo span {
+  color: var(--accent-color);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+}
+
+main {
+  flex: 1;
+  max-width: 1200px;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.card-price {
+  font-weight: bold;
+  color: var(--secondary-color);
+  font-size: 1.15rem;
+  margin-bottom: 0.8rem;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  margin-bottom: 1.2rem;
+  flex: 1;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  padding: 0.7rem 1.4rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+}
+
+.btn-accent {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 2.5rem 1.5rem 1rem;
+  margin-top: auto;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+/* Add to your CSS files */
+.logo a {
+  display: inline-block;
+  line-height: 0;
+}
+
+.logo img {
+  height: 50px; /* Adjust height as needed */
+  width: auto;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+}
+
+.logo img:hover {
+  opacity: 0.85;
+}
+
+
+/* Hide the checkbox itself */
+.nav-toggle {
+  display: none;
+}
+
+/* Hide the hamburger button by default on desktop */
+.nav-toggle-label {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .header-container {
+    flex-wrap: wrap;
+  }
+
+  .nav-toggle-label {
+    display: block; /* Show hamburger button on mobile */
+  }
+
+  /* Hide navigation menu by default on mobile */
+  nav {
+    display: none;
+    width: 100%;
+  }
+
+  /* When the checkbox is checked, show the menu */
+  .nav-toggle:checked ~ nav {
+    display: block;
+  }
+
+  .nav-toggle:checked ~ nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 1rem;
+  }
+}

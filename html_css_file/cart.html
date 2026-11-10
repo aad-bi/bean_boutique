@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bean Boutique Coffee</title>
+
+ <!-- Favicon link goes here -->
+
+ <link rel="icon" type="image/png" href="../media/logo/fabicon.png">
+
+  
+  <link rel="stylesheet" href="cart_styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar with Cart Badge -->
+  <header>
+    <div class="header-container">
+     <!-- Logo image wrapped in a link back to home -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="../media/logo/logo2.png" alt="Bean Boutique Logo">
+        </a>
+      </div>
+
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span>&#9776;</span> <!-- Hamburger symbol -->
+    </label>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="coffee.html">Coffee Selection</a></li>
+          <li><a href="equipment.html">Brewing Equipment</a></li>
+          <li><a href="events.html">Events & Workshops</a></li>
+          <li><a href="offers.html">Offers & Subscriptions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html" class="active">Cart <span class="cart-badge">2</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2 class="page-title">Your Shopping Basket</h2>
+
+    <!-- Checkboxes for Item Removal Simulation -->
+    <input type="checkbox" id="item1-toggle">
+    <input type="checkbox" id="item2-toggle">
+
+    <!-- Shopping Cart Table -->
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="item-row-1">
+          <td>Ethiopian Yirgacheffe (250g)</td>
+          <td>$18.50</td>
+          <td>1</td>
+          <td>$18.50</td>
+          <td><label for="item1-toggle" class="btn" style="background:#c0392b; padding:0.4rem 0.8rem; font-size:0.85rem;">Remove</label></td>
+        </tr>
+        <tr class="item-row-2">
+          <td>Classic French Press</td>
+          <td>$34.99</td>
+          <td>1</td>
+          <td>$34.99</td>
+          <td><label for="item2-toggle" class="btn" style="background:#c0392b; padding:0.4rem 0.8rem; font-size:0.85rem;">Remove</label></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Actions Bar -->
+    <div class="cart-actions-bar">
+      <!-- Left side: Cancel Shopping -->
+      <div class="left-actions">
+        <a href="cart_empty.html" class="btn btn-cancel">Cancel Shopping</a>
+      </div>
+
+      <!-- Right side: Continue Shopping & Checkout -->
+      <div class="right-actions">
+        <a href="coffee.html" class="btn">Continue Shopping</a>
+        <a href="#guest-checkout" class="btn btn-accent">Proceed to Checkout</a>
+      </div>
+    </div>
+
+    <!-- 3-Step Standard Guest Checkout System (No Login Required) -->
+    <section id="guest-checkout" class="checkout-section">
+      <h3 style="margin-bottom: 1.5rem; color: var(--primary-color);">Guest Checkout (No Account Needed)</h3>
+      
+      <form onsubmit="alert('Order placed successfully! Thank you for shopping with Bean Boutique.'); return false;">
+        <!-- STEP 1: Contact Details -->
+        <div class="checkout-step">
+          <div class="step-title">
+            <span class="step-number">1</span> Contact & Shipping Info
+          </div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="c-fname">First Name:</label>
+              <input type="text" id="c-fname" required>
+            </div>
+            <div class="form-group">
+              <label for="c-lname">Last Name:</label>
+              <input type="text" id="c-lname" required>
+            </div>
+            <div class="form-group">
+              <label for="c-email">Email Address:</label>
+              <input type="email" id="c-email" required>
+            </div>
+            <div class="form-group">
+              <label for="c-phone">Phone Number:</label>
+              <input type="tel" id="c-phone" required>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 2: Delivery Address -->
+        <div class="checkout-step">
+          <div class="step-title">
+            <span class="step-number">2</span> Delivery Address
+          </div>
+          <div class="form-group">
+            <label for="c-address">Street Address:</label>
+            <input type="text" id="c-address" placeholder="123 Coffee Lane" required>
+          </div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="c-city">City:</label>
+              <input type="text" id="c-city" required>
+            </div>
+            <div class="form-group">
+              <label for="c-postcode">Postal / Zip Code:</label>
+              <input type="text" id="c-postcode" required>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 3: Payment Method -->
+        <div class="checkout-step">
+          <div class="step-title">
+            <span class="step-number">3</span> Payment Method
+          </div>
+          <div class="form-group">
+            <label for="c-payment">Select Payment Type:</label>
+            <select id="c-payment">
+              <option>Cash on Delivery (COD)</option>
+              <option>Credit / Debit Card</option>
+              <option>Online Banking / Wallet</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-accent" style="width: 100%; font-size: 1.1rem; margin-top: 1rem;">Complete Guest Order ($53.49)</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Bean Boutique Coffee Shop.</p>
+  </footer>
+
+</body>
+</html>

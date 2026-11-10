@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bean Boutique Coffee</title>
+
+  <!-- Favicon link goes here -->
+  <link rel="icon" type="image/png" href="../media/logo/fabicon.png">
+
+  
+  <link rel="stylesheet" href="events_styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <!-- Logo image wrapped in a link back to home -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="../media/logo/logo2.png" alt="Bean Boutique Logo">
+        </a>
+      </div>
+
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span>&#9776;</span> <!-- Hamburger symbol -->
+    </label>
+
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="coffee.html">Coffee Selection</a></li>
+          <li><a href="equipment.html">Brewing Equipment</a></li>
+          <li><a href="events.html" class="active">Events & Workshops</a></li>
+          <li><a href="offers.html">Offers & Subscriptions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <h2 class="page-title">Upcoming Events & Classes</h2>
+    <div class="form-box">
+      <h3 style="margin-bottom: 1.2rem; color: var(--primary-color);">Workshop Online Registration</h3>
+      
+      <!-- Pure HTML + Inline Event Handler to show alert and clear form without database -->
+      <form onsubmit="alert('Your details are registered!'); this.reset(); return false;">
+        <div class="form-group">
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="FirstName" required>
+        </div>
+        <div class="form-group">
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="LastName" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="Email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="ph-number">Phone Number:</label>
+          <input type="number" id="ph-number" name="Phone Number" required>
+        </div> 
+
+
+        <div class="form-group">
+          <label for="workshop">Select Workshop:</label>
+          <select id="workshop" name="Workshop">
+            <option>Espresso & Latte Art Class ($45)</option>
+            <option>Home Pour-over Masterclass ($35)</option>
+            <option>Single-Origin Cupping Session ($25)</option>
+          </select>
+        </div>
+        <button type="submit">Submit Registration</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Bean Boutique Coffee Shop.</p>
+    </div>
+  </footer>
+</body>
+</html>

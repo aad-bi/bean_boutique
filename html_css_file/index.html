@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bean Boutique Coffee</title>
+
+  <!-- Favicon link goes here -->
+  <link rel="icon" type="image/png" href="../media/logo/fabicon.png">
+
+  
+  <link rel="stylesheet" href="index_styles.css">
+</head>
+<body>
+  <input type="checkbox" id="modal-toggle">
+  <header>
+    <div class="header-container">
+      <!-- Logo image wrapped in a link back to home -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="../media/logo/logo2.png" alt="Bean Boutique Logo">
+        </a>
+      </div>
+
+
+      
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span>&#9776;</span> <!-- Hamburger symbol -->
+    </label>
+
+
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="coffee.html">Coffee Selection</a></li>
+          <li><a href="equipment.html">Brewing Equipment</a></li>
+          <li><a href="events.html">Events & Workshops</a></li>
+          <li><a href="offers.html">Offers & Subscriptions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h2 class="page-title">Welcome to Bean Boutique</h2>
+    <p style="text-align: center; max-width: 750px; margin: 0 auto 2.5rem;">Bringing warmth, artisan quality, and community together through unique roasts and expert brewing gear.</p>
+    <div class="grid-container">
+      <div class="card">
+        <img src="../media/index/index1.jpg" alt="Espresso Coffee">
+        <div class="card-body">
+          <h3 class="card-title">Unique Blends</h3>
+          <p class="card-text">Explore single-origin and custom dark roasts with detailed tasting notes.</p>
+          <a href="coffee.html" class="btn">View Catalogue</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../media/index/index3.jpg" alt="Brewing Gear">
+        <div class="card-body">
+          <h3 class="card-title">Brewing Equipment</h3>
+          <p class="card-text">High-performance French presses, espresso machines, and pour-over kettles.</p>
+          <a href="equipment.html" class="btn">Explore Equipment</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../media/index/index2.jpg" alt="Coffee Event">
+        <div class="card-body">
+          <h3 class="card-title">Roaster Workshops</h3>
+          <p class="card-text">Sign up for interactive barista masterclasses and tasting events.</p>
+          <a href="events.html" class="btn">Register for Events</a>
+        </div>
+      </div>
+    </div>
+    <div class="plugin-container">
+      <div class="widget-box">
+        <h3>Live Social Feed (Plugin 1)</h3>
+        <p style="margin: 1rem 0; font-size: 0.9rem;"><strong>@BeanBoutique:</strong> Fresh batch of Ethiopian Yirgacheffe roasted today!</p>
+        <span class="btn btn-accent" style="font-size:0.85rem; width:auto;">Follow Us</span>
+      </div>
+      <div class="widget-box">
+        <h3>Data Protection (Plugin 2)</h3>
+        <p style="font-size: 0.9rem; margin-bottom: 0.8rem;">Protected by 256-bit SSL encryption. W3C HTML5 Validated.</p>
+        <div class="widget-badge">✓ Secure Connection Verified</div>
+      </div>
+    </div>
+  </main>
+  <div class="modal-overlay">
+    <div class="modal-content">
+      <label for="modal-toggle" class="close-modal">&times;</label>
+      <h2>Welcome Offer!</h2>
+      <p style="margin: 1rem 0;">Subscribe to our newsletter for <strong>15% OFF</strong> your first coffee purchase!</p>
+      <form action="index.html" method="get">
+        <div class="form-group"><input type="email" placeholder="Enter your email address" required></div>
+        <button type="submit" class="btn" style="width:100%;">Claim 15% Discount</button>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col"><h3>Bean Boutique</h3><p>Crafting exceptional coffee experiences daily.</p></div>
+      <div class="footer-col"><h3>Quick Links</h3><ul><li><a href="coffee.html">Coffee Catalogue</a></li><li><a href="equipment.html">Brewing Gear</a></li></ul></div>
+      <div class="footer-col"><h3>Opening Hours</h3><p>Mon - Fri: 7:00 AM - 7:00 PM</p></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Bean Boutique Coffee Shop.</p></div>
+  </footer>
+</body>
+</html>

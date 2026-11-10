@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bean Boutique Coffee</title>
+
+  <!-- Favicon link goes here -->
+  <link rel="icon" type="image/png" href="../media/logo/fabicon.png">
+
+  
+  <link rel="stylesheet" href="coffee_styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <!-- Logo image wrapped in a link back to home -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="../media/logo/logo2.png" alt="Bean Boutique Logo">
+        </a>
+      </div>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span>&#9776;</span> <!-- Hamburger symbol -->
+    </label>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="coffee.html" class="active">Coffee Selection</a></li>
+          <li><a href="equipment.html">Brewing Equipment</a></li>
+          <li><a href="events.html">Events & Workshops</a></li>
+          <li><a href="offers.html">Offers & Subscriptions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2 class="page-title">Artisan Single-Origin & Blends</h2>
+
+    <!-- Expanded 6-Item Grid -->
+    <div class="grid-container">
+
+      <!-- Item 1 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=600&q=80" alt="Ethiopian Yirgacheffe">
+        <div class="card-body">
+          <span class="badge light-roast">Light Roast</span>
+          <h3 class="card-title">Ethiopian Yirgacheffe</h3>
+          <div class="card-price">$18.50 / 250g</div>
+          <p class="card-text"><strong>Tasting Notes:</strong> Jasmine floral, lemon zest, blueberry sweetness.<br><strong>Brewing:</strong> Pour-over, Chemex.</p>
+          <a href="cart.html" class="btn">Add to Basket</a>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1587734195503-904fca47e0e9?auto=format&fit=crop&w=600&q=80" alt="Colombian Supremo">
+        <div class="card-body">
+          <span class="badge medium-roast">Medium Roast</span>
+          <h3 class="card-title">Colombian Supremo</h3>
+          <div class="card-price">$16.00 / 250g</div>
+          <p class="card-text"><strong>Tasting Notes:</strong> Milk chocolate, hazelnut, subtle citrus acidity.<br><strong>Brewing:</strong> Espresso, French Press.</p>
+          <a href="cart.html" class="btn">Add to Basket</a>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?auto=format&fit=crop&w=600&q=80" alt="Velvet Dark Espresso">
+        <div class="card-body">
+          <span class="badge dark-roast">Dark Roast</span>
+          <h3 class="card-title">Velvet Dark Espresso</h3>
+          <div class="card-price">$17.00 / 250g</div>
+          <p class="card-text"><strong>Tasting Notes:</strong> Dark cocoa, smoky caramel, bold velvety finish.<br><strong>Brewing:</strong> Espresso Machine, Moka Pot.</p>
+          <a href="cart.html" class="btn">Add to Basket</a>
+        </div>
+      </div>
+
+      <!-- Item 4 (NEW) -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" alt="Guatemala Huehuetenango">
+        <div class="card-body">
+          <span class="badge medium-roast">Medium Roast</span>
+          <h3 class="card-title">Guatemala Huehuetenango</h3>
+          <div class="card-price">$19.00 / 250g</div>
+          <p class="card-text"><strong>Tasting Notes:</strong> Green apple, brown sugar, milk chocolate.<br><strong>Brewing:</strong> Aeropress, Drip Coffee.</p>
+          <a href="cart.html" class="btn">Add to Basket</a>
+        </div>
+      </div>
+
+      <!-- Item 5 (NEW) -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80" alt="Sumatra Mandheling">
+        <div class="card-body">
+          <span class="badge dark-roast">Dark Roast</span>
+          <h3 class="card-title">Sumatra Mandheling</h3>
+          <div class="card-price">$17.50 / 250g</div>
+          <p class="card-text"><strong>Tasting Notes:</strong> Earthy spice, dark cocoa, cedar wood aroma.<br><strong>Brewing:</strong> French Press, Espresso.</p>
+          <a href="cart.html" class="btn">Add to Basket</a>
+        </div>
+      </div>
+
+      <!-- Item 6 (NEW) -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=600&q=80" alt="Costa Rica Honey Process">
+        <div class="card-body">
+          <span class="badge light-roast">Special Release</span>
+          <h3 class="card-title">Costa Rica Honey Process</h3>
+          <div class="card-price">$21.00 / 250g</div>
+          <p class="card-text"><strong>Tasting Notes:</strong> Wild honey, nectarine, toasted almond sweetness.<br><strong>Brewing:</strong> Chemex, V60 Pour-over.</p>
+          <a href="cart.html" class="btn">Add to Basket</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Bean Boutique Coffee Shop.</p>
+  </footer>
+</body>
+</html>
