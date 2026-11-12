@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bean Boutique Coffee</title>
+
+  <!-- Favicon link goes here -->
+  <link rel="icon" type="image/png" href="../media/logo/fabicon.png">
+
+  
+  <link rel="stylesheet" href="cart_styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar with 0 Items in Cart Badge -->
+  <header>
+    <div class="header-container">
+      <!-- Logo image wrapped in a link back to home -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="../media/logo/logo2.png" alt="Bean Boutique Logo">
+        </a>
+      </div>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span>&#9776;</span> <!-- Hamburger symbol -->
+    </label>
+
+    
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="coffee.html">Coffee Selection</a></li>
+          <li><a href="equipment.html">Brewing Equipment</a></li>
+          <li><a href="events.html">Events & Workshops</a></li>
+          <li><a href="offers.html">Offers & Subscriptions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart_empty.html" class="active">Cart <span class="cart-badge">0</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2 class="page-title">Your Shopping Basket</h2>
+
+    <div style="background: white; padding: 3rem; text-align: center; border-radius: 10px; box-shadow: var(--shadow);">
+      <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Your Shopping Cart is Empty</h3>
+      <p style="margin-bottom: 2rem;">All items have been cleared from your selection.</p>
+      <a href="coffee.html" class="btn btn-accent">Start Shopping Again</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Bean Boutique Coffee Shop.</p>
+  </footer>
+
+</body>
+</html>
